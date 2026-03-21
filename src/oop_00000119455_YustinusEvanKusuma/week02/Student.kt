@@ -3,7 +3,7 @@ package oop_00000119455_YustinusEvanKusuma.week02
 class Student (
     val name: String,
     val nim: String,
-    var major: String,
+    var major: String = "Belum dipilih",
     var gpa: Double = 0.0 // <-- Default Argument
 ){ // init berfungsi untuk cek apakah data sudah valid atau belum
     init {
@@ -14,8 +14,5 @@ class Student (
         } else {
             println("LOG: Objek Student $name berhasil dialokasikan di Memory.")
         }
-    }
-    constructor(name: String, nim: String) : this(name, nim, major = "Non-Matriculated") {
-        println("LOG: Menggunakan constructor jalur umum (Tanpa Jurusan)")
     }
 }
