@@ -3,7 +3,8 @@ package oop_00000119455_YustinusEvanKusuma.week02
 class Student (
     val name: String,
     val nim: String,
-    val major: String
+    var major: String,
+    var gpa: Double = 0.0 // <-- Default Argument
 ){ // init berfungsi untuk cek apakah data sudah valid atau belum
     init {
         // Validasi Sederhana: Cek panjang NIM
