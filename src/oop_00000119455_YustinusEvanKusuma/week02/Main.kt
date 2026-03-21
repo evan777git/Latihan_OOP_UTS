@@ -8,7 +8,7 @@ fun main () {
     println("--- APLIKASI PMB UMN ---")
 
     print("Masukkan Nama: ") // Pakai print biar input user berada di samping langsung
-    val name = scanner.next()
+    val name = scanner.nextLine() // Kalau pakai scanner.next cuma membaca 1 kata (berhenti pas ketemu spasi). Kalau scanner.nextLine itu 1 kalimat (berhenti pas enter bukan spasi)
 
     print("Masukkan NIM (Wajib 5 Karakter): ")
     val nim = scanner.next()
