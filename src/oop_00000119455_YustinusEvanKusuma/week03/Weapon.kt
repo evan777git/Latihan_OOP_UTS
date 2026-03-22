@@ -1,7 +1,7 @@
 package oop_00000119455_YustinusEvanKusuma.week03
 
 class Weapon(
-    val name: String
+    val name: String,
     damage: Int
 ) {
     var damage: Int = damage
