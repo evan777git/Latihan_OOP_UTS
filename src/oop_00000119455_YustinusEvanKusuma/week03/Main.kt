@@ -4,7 +4,7 @@ fun main () {
     val e = Employee ("Budi")
 
     // 1. Test validasi salary
-    e.salary = -1_000 // Harusnya print error
+    e.salary = -1_000
     e.salary = 5_000_000
     println("Gaji: ${e.salary}")
 
