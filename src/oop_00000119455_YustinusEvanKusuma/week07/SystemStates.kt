@@ -8,6 +8,6 @@ enum class AppState {
 // sealed class adalah kelompok kemungkinan yang sudah ditentukan
 sealed class ApiResponse {
     data class Success(val data: String) : ApiResponse()
-    data class Failure(val message: String) : ApiResponse()
+    data class Error(val message: String) : ApiResponse()
     object Loading : ApiResponse()
 } // ApiResponse cuma bisa jadi 3 hal: Success -> ada data, Failure -> ada pesan error, Loading -> sedang proses
