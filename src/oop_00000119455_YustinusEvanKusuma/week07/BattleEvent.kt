@@ -1,6 +1,6 @@
 package oop_00000119455_YustinusEvanKusuma.week07
 
-sealed class BattleState (
+sealed class BattleState {
     data class MonsterEncounter(val monsterName: String) : BattleState()
 
     data class LootDropped(val item: GameItem) : BattleState()
@@ -8,4 +8,4 @@ sealed class BattleState (
     data class GameOver(val reason: String) : BattleState()
 
     object SafeZone : BattleState()
-)
+}
